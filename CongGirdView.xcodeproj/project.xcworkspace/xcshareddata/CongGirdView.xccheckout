@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>578EB6B2-4A21-46EB-962C-9BACE52CF96B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CongGirdView</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F99F4E3031ED1AA4ACFB42582A98E2390FB3AFE0</key>
+		<string>https://github.com/congHu/CongGridView</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CongGirdView.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F99F4E3031ED1AA4ACFB42582A98E2390FB3AFE0</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/congHu/CongGridView</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F99F4E3031ED1AA4ACFB42582A98E2390FB3AFE0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F99F4E3031ED1AA4ACFB42582A98E2390FB3AFE0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CongGridView</string>
+		</dict>
+	</array>
+</dict>
+</plist>
