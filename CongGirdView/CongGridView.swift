@@ -17,9 +17,14 @@ class CongGridView: UIView {
     }
     init(frame: CGRect, x: Int, y:Int) {
         super.init(frame: frame)
-        numOfX = x
-        numOfY = y
-        addGrid()
+        if x>0 && y>0{
+            numOfX = x
+            numOfY = y
+            addGrid()
+        }else{
+            println("Grid must have at least 1 row or 1 list")
+        }
+        
     }
     private func addGrid(){
         width = (frame.width-marginX)/CGFloat(numOfX)-marginX

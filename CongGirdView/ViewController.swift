@@ -15,12 +15,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        var cgv = CongGridView(frame: view.frame, x: 10, y: 9)
+        var cgv = CongGridView(frame: view.frame, x: 1, y: 9)
         view.addSubview(cgv)
-        cgv.MarginX = 1
-        cgv.MarginY = 1
-        cgv.resetFrame(CGRectMake(20, 20, 300, 300))
-        cgv.setAllBGColor(UIColor.blackColor())
         
         
     }
