@@ -15,8 +15,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        var cgv = CongGridView(frame: view.frame, x: 1, y: 9)
-        view.addSubview(cgv)
+        //var cgv = CongGridView(frame: view.frame, x: 1, y: 9)
+        //view.addSubview(cgv)
         
         
     }

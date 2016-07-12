@@ -22,9 +22,15 @@ class CongGridView: UIView {
             numOfY = y
             addGrid()
         }else{
-            println("Grid must have at least 1 row or 1 list")
+            print("Grid must have at least 1 row or 1 list")
         }
         
+    }
+    convenience init(cell: UIView, x: Int, y: Int) {
+        super.init(frame: CGRect(x: cell.frame.origin.x, y: cell.frame.origin.y, width: (cell.frame.width+marginX)*CGFloat(x), height: (cell.frame.height+marginY)*CGFloat(y))
+        numOfX = x
+        numOfY = y
+        addGrid(cell)
     }
     private func addGrid(){
         width = (frame.width-marginX)/CGFloat(numOfX)-marginX
@@ -32,16 +38,28 @@ class CongGridView: UIView {
         for i in 0..<numOfY{
             cell.append([])
             for j in 0..<numOfX{
-                var brick = UIView(frame: CGRectMake(marginX*CGFloat(j+1)+width*CGFloat(j), marginY*CGFloat(i)+height*CGFloat(i), width, height))
+                let brick = UIView(frame: CGRectMake(marginX*CGFloat(j+1)+width*CGFloat(j), marginY*CGFloat(i+1)+height*CGFloat(i), width, height))
                 cell[i].append(brick)
                 cell[i][j].backgroundColor = defaultColor
                 self.addSubview(cell[i][j])
             }
         }
     }
-    required init(coder aDecoder: NSCoder) {
+    private func addGrid(view:UIView){
+        width = view.frame.width
+        height = view.frame.height
+        for i in 0..<numOfY{
+            cell.append([])
+            for j in 0..<numOfX{
+                cell[i].append(view)
+                self.addSubview(cell[i][j])
+            }
+        }
+    }
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+    
     private var numOfX:Int = 6
     var NumOfX:Int{
         get{
