@@ -27,7 +27,7 @@ class CongGridView: UIView {
         
     }
     convenience init(cell: UIView, x: Int, y: Int) {
-        super.init(frame: CGRect(x: cell.frame.origin.x, y: cell.frame.origin.y, width: (cell.frame.width+marginX)*CGFloat(x), height: (cell.frame.height+marginY)*CGFloat(y))
+        self.init(frame: CGRect(x: cell.frame.origin.x, y: cell.frame.origin.y, width: (cell.frame.width+2)*CGFloat(x), height: (cell.frame.height+2)*CGFloat(y)))
         numOfX = x
         numOfY = y
         addGrid(cell)
