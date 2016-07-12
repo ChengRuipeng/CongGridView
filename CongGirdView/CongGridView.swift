@@ -109,7 +109,7 @@ class CongGridView: UIView {
         for i in 0..<numOfY{
             for j in 0..<numOfX{
                 cell[i][j].frame = CGRectMake(marginX*CGFloat(j+1)+width*CGFloat(j), marginY*CGFloat(i)+height*CGFloat(i), width, height)
-                self.addSubview(cell[i][j])
+                self.addSubview(cell[i][j]) 
             }
         }
         
